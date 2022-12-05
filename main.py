@@ -14,6 +14,7 @@ def attack(char_name, char_class):
         return (
             f'{char_name} нанёс урон противнику равный {5 + randint(-3, -1)}'
             )
+    return (f'{char_name} не нанёс уро противнику')
 
 
 def defence(char_name, char_class):
@@ -29,6 +30,7 @@ def defence(char_name, char_class):
         return (
             f'{char_name} блокировал {10 + randint(2, 5)} урона'
             )
+    return (f'{char_name} не заблокировал урон')
 
 
 def special(char_name, char_class):
@@ -44,6 +46,7 @@ def special(char_name, char_class):
         return (
             f'{char_name} применил специальное умение «Защита {10 + 30}»'
             )
+    return (f'{char_name} не применил специальное умение')
 
 
 def start_training(char_name, char_class):
